@@ -205,19 +205,3 @@ Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de 
 - Basé sur la bibliothèque [Zint](https://www.zint.org.uk/)
 - Développé avec [Flutter](https://flutter.dev)
 
-```
-
-Ce README :
-- Est clair et concis
-- Couvre l'installation et la configuration
-- Fournit des exemples de code pertinents
-- Documente les principales fonctionnalités
-- Inclut la gestion des erreurs
-- Aide à la résolution des problèmes
-- Explique comment contribuer
-
-N'oublie pas de :
-1. Mettre à jour les numéros de version
-2. Ajouter des badges pertinents
-3. Compléter les informations de licence
-4. Ajouter des exemples spécifiques à ton implémentation
