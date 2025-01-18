@@ -97,6 +97,37 @@ try {
 }
 ```
 
+### Méthodes principales
+
+```dart
+// Configuration de base
+setSymbology(int symbology)      // Définit le type de code-barres
+setHeight(double height)         // Définit la hauteur
+setScale(double scale)          // Définit l'échelle
+encode(String data)             // Encode les données
+print([int rotation = 0])       // Génère l'image
+
+// Apparence
+setForegroundColor(String color)    // Couleur du code ("RRGGBB")
+setBackgroundColor(String color)    // Couleur de fond ("RRGGBB")
+setWhitespaceWidth(int width)      // Marge horizontale
+setWhitespaceHeight(int height)    // Marge verticale
+setBorderWidth(int width)          // Largeur de bordure
+
+// Options avancées
+setOutputOptions(int options)      // Options de sortie
+setShowHRT(bool show)             // Affichage du texte
+setInputMode(int mode)            // Mode d'entrée
+setDotSize(double size)           // Taille des points
+setGuardDescent(double descent)   // Descente des barres (EAN/UPC)
+setWarnLevel(int level)           // Niveau d'avertissement
+
+// Options spécifiques
+setOption1(int option)            // Option spécifique 1
+setOption2(int option)            // Option spécifique 2
+setOption3(int option)            // Option spécifique 3
+```
+
 ### Types de codes-barres supportés
 
 ```dart
