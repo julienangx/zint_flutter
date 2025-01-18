@@ -58,7 +58,6 @@ class ZintBarcode {
     return bindings.print(_handle, rotation);
   }
 
-  // Ajouter d'autres méthodes pour configurer les options
   void setHeight(double height) {
     _handle.ref.height = height;
   }
@@ -72,5 +71,63 @@ class ZintBarcode {
     _handle.ref.fgcolour = colorPtr;
   }
 
-// etc...
+  void setSymbology(int symbology) {
+    _handle.ref.symbology = symbology;
+  }
+
+  void setWhitespaceWidth(int width) {
+    _handle.ref.whitespace_width = width;
+  }
+
+  void setWhitespaceHeight(int height) {
+    _handle.ref.whitespace_height = height;
+  }
+
+  void setBorderWidth(int width) {
+    _handle.ref.border_width = width;
+  }
+
+  void setOutputOptions(int options) {
+    _handle.ref.output_options = options;
+  }
+
+  void setBackgroundColor(String color) {
+    final colorPtr = color.toNativeUtf8();
+    _handle.ref.bgcolour = colorPtr;
+  }
+
+  void setOutputFile(String filename) {
+    final filenamePtr = filename.toNativeUtf8();
+    _handle.ref.outfile = filenamePtr;
+  }
+
+  void setPrimary(String message) {
+    final messagePtr = message.toNativeUtf8();
+    _handle.ref.primary = messagePtr;
+  }
+
+  void setOption1(int option) {
+    _handle.ref.option_1 = option;
+  }
+
+  void setOption2(int option) {
+    _handle.ref.option_2 = option;
+  }
+
+  void setOption3(int option) {
+    _handle.ref.option_3 = option;
+  }
+
+  void setShowHRT(bool show) {
+    _handle.ref.show_hrt = show ? 1 : 0;
+  }
+
+  void setInputMode(int mode) {
+    _handle.ref.input_mode = mode;
+  }
+
+  void setECI(int eci) {
+    _handle.ref.eci = eci;
+  }
+
 }
